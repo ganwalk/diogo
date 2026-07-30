@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🍅 Tacar Tomate no Diogo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-wrap">
+    <h1>🍅 Tacar Tomate no Diogo</h1>
+    <p class="subtitle">Clica (ou toca) na cara dele. Acerta em cheio para pontos extra!</p>
+
+    <div class="scoreboard">
+      <div class="stat">
+        <span class="stat-value" id="hits">0</span>
+        <span class="stat-label">Acertos</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="throws">0</span>
+        <span class="stat-label">Tomates</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="accuracy">0%</span>
+        <span class="stat-label">Precisão</span>
+      </div>
+    </div>
+
+    <div class="stage" id="stage">
+      <img id="diogo" src="diogo.png" alt="Diogo" draggable="false">
+      <canvas id="splatCanvas"></canvas>
+      <div id="popupLayer"></div>
+    </div>
+
+    <div class="controls">
+      <button id="resetBtn">🧽 Limpar tomates</button>
+      <button id="soundBtn">🔊 Som</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
